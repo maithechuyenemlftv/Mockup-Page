@@ -159,8 +159,8 @@
     countElement.innerHTML = localStorage.getItem("count");
     buttonElement.forEach((item) => {
       item.addEventListener("click", () => {
-        const b = +localStorage.getItem("count") + 1;
-        localStorage.setItem("count", b);
+        const count = +localStorage.getItem("count") + 1;
+        localStorage.setItem("count", count);
         countElement.innerHTML = localStorage.getItem("count");
       });
     });
